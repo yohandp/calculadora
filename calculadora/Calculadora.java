@@ -9,19 +9,19 @@ public class Calculadora{
 
         switch (operacao){
             case 1:
-                OperacoesCalc soma = new OperacoesCalc();
+                Soma soma = new Soma();
                 soma.soma();
                 break;
             case 2:
-                OperacoesCalc subtracao = new OperacoesCalc();
+                Subtracao subtracao = new Subtracao();
                 subtracao.subtracao();
                 break;
             case 3:
-                OperacoesCalc multiplicacao = new OperacoesCalc();
+                Multiplicacao multiplicacao = new Multiplicacao();
                 multiplicacao.multiplicacao();
                 break;
             case 4:
-                OperacoesCalc divisao = new OperacoesCalc();
+                Divisao divisao = new Divisao();
                 divisao.divisao();
                 break;
         }
