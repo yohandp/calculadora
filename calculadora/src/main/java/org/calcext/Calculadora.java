@@ -6,11 +6,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Scanner;
-import org.apache.log4j.BasicConfigurator;
 
 public class Calculadora{
     public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException, NoSuchMethodException, SecurityException, IllegalArgumentException, InvocationTargetException, IOException {
-        BasicConfigurator.configure();
         StringBuilder result = new StringBuilder();
         Scanner scan = new Scanner(System.in);
         Server server = new Server();

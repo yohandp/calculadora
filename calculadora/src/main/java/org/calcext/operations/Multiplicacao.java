@@ -1,4 +1,4 @@
-package org.calcext;
+package org.calcext.operations;
 
 public class Multiplicacao implements Operations{
     @Override

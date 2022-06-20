@@ -9,8 +9,8 @@ public class Controller {
         double a = Double.parseDouble(input.pathParam("a"));
         double b = Double.parseDouble(input.pathParam("b"));
         
-        Object classInstance = Class.forName("calcext."+op).getDeclaredConstructor().newInstance();
-        Method operation = Class.forName("calcext."+op).getDeclaredMethod("result", new Class[] {Double.class, Double.class});
+        Object classInstance = Class.forName("org.calcext.operations."+op).getDeclaredConstructor().newInstance();
+        Method operation = Class.forName("org.calcext.operations."+op).getDeclaredMethod("result", new Class[] {Double.class, Double.class});
         Object result = operation.invoke(classInstance, a, b);        
 
         input.json(result);
