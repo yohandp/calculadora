@@ -1,4 +1,4 @@
-package calculadoraextensivel;
+package org.calcext;
 
 public class Adicao implements Operations{
     @Override
